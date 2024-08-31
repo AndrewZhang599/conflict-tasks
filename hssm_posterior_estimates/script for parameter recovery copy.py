@@ -112,7 +112,7 @@ def main():
     args = parse_arguments()
     run_index = args.run_index
     
-    onnx_path = "/users/azhan378/LAN_pipeline_minimal/data/networks/torch/lan/shrink_spot/shrink_spot_lan_d38a4ee266ff11ef995fa0423f39a3e6_torch_model.onnx"
+    onnx_path = "/users/azhan378/LAN_pipeline_minimal/data/networks/torch/lan/shrink_spot/shrink_spot_lan_d38a4ee266ff11ef995fa0423f39a3e6_torch_model.onnx" #path where onnx file is saved 
 
     # Generates data
     true_theta_list, sim_data_list = generate_simulation_data(n_samples=4)
