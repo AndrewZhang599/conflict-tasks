@@ -12,7 +12,7 @@ SSP is a sequential sampling model of attentional focus for the Eriksen flanker 
 
 DMC is another sequential sampling model that generalizes beyoned the Eriksen flanker task to conflict-based tasks as a whole. The DMC assumes two possible architectures for conflict-based decision-making: automatic processing of irrelevant stimuli affects controlled processing of relevant stimuli or both automatic and controlled processing converge to affect response times. This model is mathematically operationalized using a **scaled Gamma function**, also described in the github repo stated above as **gamma drift**. 
 
-                                                     ![image](https://github.com/user-attachments/assets/6b6fb22c-ab63-486f-8919-ad8939630753)
+![image](https://github.com/user-attachments/assets/6b6fb22c-ab63-486f-8919-ad8939630753)
 
 
 # LANs Training 
