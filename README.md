@@ -5,6 +5,9 @@ This repo is a collection of the code and graphs I thought were most relevant fr
 # Shrinking spotlight model (SSP) 
 SSP is a sequential sampling model of attentional focus for the Eriksen flanker task. It describes attention initially as a large "spotlight" over the flankers that gradually narrows in scope until it is solely focused on the target flanker. This is mathematically operationalized as a normal distribution over the flankers. The **standard deviation (sda)** of the normal distribution gradually decreases by a **linear rate (r)** until the distribution is entirely on the target flanker. The **drift rate (v)** is subsequently the sum of the contribution of attention towards the **outer**,**inner**, and **target** flankers weighted by the **perceptual input (p)** of the flankers respectively. The exact computational description of the simulator I created of this model is in this repo: https://github.com/AlexanderFengler/ssm-simulators/tree/shrinking-spotlight-model) 
 
+![image](https://github.com/user-attachments/assets/0a20a5ac-80bf-4921-a0c2-6c3dd9691ae4)
+
+
 # Diffusion Model for Conflict Tasks (DMC) 
 
 DMC is another sequential sampling model that generalizes beyoned the Eriksen flanker task to conflict-based tasks as a whole. The DMC assumes two possible architectures for conflict-based decision-making: automatic processing of irrelevant stimuli affects controlled processing of relevant stimuli or both automatic and controlled processing converge to affect response times. This model is mathematically operationalized using a **scaled Gamma function**, also described in the github repo stated above as **gamma drift**. 
