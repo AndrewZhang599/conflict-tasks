@@ -12,6 +12,9 @@ SSP is a sequential sampling model of attentional focus for the Eriksen flanker 
 
 DMC is another sequential sampling model that generalizes beyoned the Eriksen flanker task to conflict-based tasks as a whole. The DMC assumes two possible architectures for conflict-based decision-making: automatic processing of irrelevant stimuli affects controlled processing of relevant stimuli or both automatic and controlled processing converge to affect response times. This model is mathematically operationalized using a **scaled Gamma function**, also described in the github repo stated above as **gamma drift**. 
 
+![image](https://github.com/user-attachments/assets/6b6fb22c-ab63-486f-8919-ad8939630753)
+
+
 # LANs Training 
 Because both the SSP and the DMC are **mathematically intractable**, I have to use a **likelihood approximation network (LANs)** in order to approximate the likelihood function directly. The repo I used was this one (https://github.com/AlexanderFengler/LAN_pipeline_minimal). The models I trained are saved in **trained LAN data** under **onnx_models**. I trained multiple models for the SSP as the initial bounds of simulated parameter values I had were not reflective of other investigations into the parameter recovery estimability of the SSP (see this paper: https://link.springer.com/article/10.3758/s13423-017-1271-2#Sec10). The **additional onnx model "extra_paramsets"** details my attempt to drastically increase the number of samples simulated and reduce the parameter sets I had initially specified in the other onnx model for SSP. 
 
