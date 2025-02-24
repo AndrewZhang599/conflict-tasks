@@ -25,4 +25,6 @@ Parameter recovery estimations for the DMC were **quite strong** with **"v", "a"
 
 You can find the rest of the graphs and code I used in the **hssm_testing** folder. You will also find the code I used to generate the parameter values in Brown's supercomputing cluster Oscar in **hssm_posterior_estimates**, along with the generated parameter values themselves. 
 
+# Poster from LANS 
+![PosterLANS](https://github.com/user-attachments/assets/45a485cd-10ee-43dd-88c0-8faea1a3d3f6)
 
