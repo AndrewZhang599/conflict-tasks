@@ -2,6 +2,9 @@
 
 This repo is a collection of the code and graphs I thought were most relevant from my brief investigation into sequential sampling models of conflict-based decision-making tasks at Brown University with Professor Michael J. Frank and Dr. Alex Fengler. The models I focused on were the **shrinking spotlight model (SSP)** and the **Diffusion Model for Conflict Tasks (DMC, gamma drift)**. They are detailed in this paper (https://www.sciencedirect.com/science/article/abs/pii/S001002851100065X?via%3Dihub) and this paper (https://www.sciencedirect.com/science/article/abs/pii/S0010028515000195?via%3Dihub) respectively. 
 
+# Poster from LANS 
+![PosterLANS](https://github.com/user-attachments/assets/45a485cd-10ee-43dd-88c0-8faea1a3d3f6)
+
 # Shrinking spotlight model (SSP) 
 SSP is a sequential sampling model of attentional focus for the Eriksen flanker task. It describes attention initially as a large "spotlight" over the flankers that gradually narrows in scope until it is solely focused on the target flanker. This is mathematically operationalized as a normal distribution over the flankers. The **standard deviation (sda)** of the normal distribution gradually decreases by a **linear rate (r)** until the distribution is entirely on the target flanker. The **drift rate (v)** is subsequently the sum of the contribution of attention towards the **outer**,**inner**, and **target** flankers weighted by the **perceptual input (p)** of the flankers respectively. The exact computational description of the simulator I created of this model is in this repo: https://github.com/AlexanderFengler/ssm-simulators/tree/shrinking-spotlight-model) 
 
@@ -24,7 +27,4 @@ Parameter recovery estimations for the SSP ranged from poor to fair for most par
 Parameter recovery estimations for the DMC were **quite strong** with **"v", "a", "z", and "t"**, but were **quite poor** for parameters specific to the **scaled Gamma function**. 
 
 You can find the rest of the graphs and code I used in the **hssm_testing** folder. You will also find the code I used to generate the parameter values in Brown's supercomputing cluster Oscar in **hssm_posterior_estimates**, along with the generated parameter values themselves. 
-
-# Poster from LANS 
-![PosterLANS](https://github.com/user-attachments/assets/45a485cd-10ee-43dd-88c0-8faea1a3d3f6)
 
